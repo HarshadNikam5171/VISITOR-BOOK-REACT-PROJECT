@@ -1,11 +1,11 @@
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { HashRouter, Routes, Route, Link } from "react-router-dom";
 import VisitorPage from "./Pages/VisitorPage";
 import EventPage from "./Pages/EventPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="container mt-5 ">
         <h1 className="mb-4 text-center">Visitor Book</h1>
 
@@ -23,7 +23,7 @@ function App() {
           <Route path="/events" element={<EventPage />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
